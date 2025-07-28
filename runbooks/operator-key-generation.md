@@ -17,7 +17,7 @@
 adkg-cli generate \
   --scheme $SCHEME_FILE \
   --priv-out $ADKG_OUT/adkg.priv \
-  --out $ADKG_OUT/adkg.pub
+  --pub-out $ADKG_OUT/adkg.pub
 ```
 
 4. Report any errors to the ceremony leader

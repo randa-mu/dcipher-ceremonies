@@ -23,4 +23,3 @@ cargo build --release
 mv target/release/adkg-cli /usr/local/bin/
 ```
 
-
