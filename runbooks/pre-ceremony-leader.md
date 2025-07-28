@@ -5,8 +5,9 @@
 1. Update to the latest DKG CLI
 ```bash
 rustup install stable && \
-cd dcipher/crates/adkg-cli && git pull && \
-cargo build --release && \
+cd /path/to/dcipher && \
+git pull && \
+cargo build --release -p adkg-cli && \
 cp target/release/adkg-cli /usr/local/bin
 ```
 
