@@ -55,7 +55,9 @@ peer_id = "12D3KooWGjQdQ6B3LazUw2EVbhakN3P5931e1UV76vJUNoV73Dd4"
 
 > [!NOTE]
 > `t` is the _malicious threshold_, i.e. the maximum number of malicious nodes the network can tolerate. 
+>
 > **This is different to drand**. 
+>
 > Under the current asynchronous DKG protocol, it can only be as high as $f$ where the total node count is $3f + 1$.
 
 > [!NOTE]
