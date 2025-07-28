@@ -13,7 +13,7 @@ This is based on the paper [Practical Asynchronous Distributed Key Generation by
 The ADKG ceremony consists of three stages:
 
 - Scheme Definition: One participant (henceforth referred to as 'the leader') defines and shares a scheme file that outlines the curve parameters, and generators, and shares it with the other participants.
-- Operator Key Generation: Each participant generates two long-term keypairs (ADKG and libp2p) and submits their public material to the leader, whereby the leader will create a group file.
+- Operator Key Generation: Each participant generates two long-term keypairs (ADKG and libp2p) and submits their public key material to the leader, whereby the leader will create a group file. (They can also broadcast it to the other participants for the sake of verifiability.)
 - Distributed Key Generation: All nodes run the ADKG protocol simultaneously using synchronized start time, scheme definition and shared group file, producing a distributed public/private keypair suitable for threshold cryptographic operations.
 
 ## Runbooks
