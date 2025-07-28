@@ -44,9 +44,6 @@ generator_g = "qB3/U8RDVn4aF2tUTlmeDQbV0PvHJ8IB0QL/k1Z+5WI="
 generator_h = "gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE="
 ```
 
-Note that we use the malicious threshold here, i.e., the maximum number of parties that may be malicious.
-The reconstruction threshold, i.e., the number of partials required to obtain a threshold signature, is obtained by adding one.
-
 The `new-scheme` command can be used to obtain a scheme specification as follows:
 ```bash
 adkg-cli new-scheme --app-name dcipher --out scheme.toml
