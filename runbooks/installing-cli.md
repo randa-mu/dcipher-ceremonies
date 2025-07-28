@@ -14,6 +14,7 @@ rustup install stable
 
 ```
 git clone https://github.com/randa-mu/dcipher
+cd dcipher
 cargo build --release -p adkg-cli
 ```
 
