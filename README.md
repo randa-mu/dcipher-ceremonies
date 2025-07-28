@@ -52,6 +52,6 @@ adkg-cli new-scheme --app-name dcipher --out scheme.toml
 By default, we use the `DYX20-Bn254G1-Keccak256` scheme.
 This represents the aforementioned ADKG, using the bn254 curve on group G1.
 In this configuration, the long-term public keys use a deterministic generator, `H`, obtained by hashing `ADKG_GENERATOR_G` with the DST `ADKG-%adkg_version%-%app_name%_BN254G1_XMD:KECCAK-256_SVDW_RO_GENERATORS_` using [rfc9380](https://datatracker.ietf.org/doc/html/rfc9380).
-The public key after the ADKG, however, are output with respect to the standard generator of bn254, the point `(1, 2)`.
+The public keys after the ADKG, however, are output with respect to the standard generator of bn254, the point `(1, 2)`.
 
 It is preferable that a single participant executes the `new-scheme` command, and sends the generated file to the rest of the participants.
