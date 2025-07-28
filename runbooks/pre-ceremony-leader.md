@@ -2,7 +2,8 @@
 
 ## Steps
 
-1. Update to the latest DKG CLI  
+**1. Update to the latest DKG CLI**
+
 ```bash
 rustup install stable && \
 cd /path/to/dcipher && \
@@ -11,19 +12,23 @@ cargo build --release -p adkg-cli && \
 cp target/release/adkg-cli /usr/local/bin
 ```
 
-2. Generate a scheme for the network        
+**2. Generate a scheme for the network**
+
 ```bash
 adkg-cli new-scheme --app-name dcipher-testnet --scheme-out scheme.toml
 ```
 
-3. Share the newly created scheme with the participants  
+**3. Share the newly created scheme with the participants**
+
 `cat` the scheme.toml and share its contents via slack.
 
-4. Prompt dcipher operators to generate their long-term keys
+**4. Prompt dcipher operators to generate their long-term keys**
+
 - message the dcipher operators on slack and prompt them to generate keys using the [relevant steps](./operator-key-generation.md)
 - gather the chosen multiaddrs and generated peerIDs of all ceremony participants
 
-5. Bundle multiaddrs and peerIDs into a `group.toml`
+**5. Bundle multiaddrs and peerIDs into a `group.toml`**
+
 Aggregate the multiaddrs and peerIDs from other participants into a file, giving them arbitrary indexes.
 Create a toml file like the following:
 
@@ -66,6 +71,7 @@ peer_id = "12D3KooWGjQdQ6B3LazUw2EVbhakN3P5931e1UV76vJUNoV73Dd4"
 > [!WARNING]
 > If the nodes aren't running by the `start_time` of the ceremony, they may be excluded
 
-6. Share the `group.toml` file with the other dcipher network participants  
+**6. Share the `group.toml` file with the other dcipher network participants**
+
 Tell them their index for convenience, though they ought to check this themselves against their peerID
 
