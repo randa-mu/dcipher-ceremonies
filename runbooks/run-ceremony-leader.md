@@ -10,7 +10,7 @@
 It should be a non-zero integer, e.g. `1`.
 Export it for use in the next step: `export ID=1`
 
-2. Run the share command, replacing the contents of each flag with values relevant to your node
+2. Run the share command, replacing the contents of each flag with values relevant to your node  
 ```bash
 adkg-cli run \
   --scheme ./scheme.toml \                   # replace with the path to the scheme.toml file the leader gave you
@@ -31,7 +31,8 @@ adkg-cli run \
 > Don't share your distributed key share with anybody!
 
 > [!WARNING]  
-> Make sure your distributed key share is backed up. If you lose it, you won't be able to participate in the dcipher network until the next ceremony.
+> Make sure your distributed key share is backed up. 
+> If you lose it, you won't be able to participate in the dcipher network until the next ceremony.
 
 3. Twiddle your thumbs until the start time from the group.toml has been reached
 

@@ -2,7 +2,7 @@
 
 ## Steps
 
-1. Update to the latest DKG CLI
+1. Update to the latest DKG CLI  
 ```bash
 rustup install stable && \
 cd /path/to/dcipher && \
@@ -11,12 +11,12 @@ cargo build --release -p adkg-cli && \
 cp target/release/adkg-cli /usr/local/bin
 ```
 
-2. Generate a scheme for the network
+2. Generate a scheme for the network        
 ```bash
 adkg-cli new-scheme --app-name dcipher-testnet --scheme-out scheme.toml
 ```
 
-3. Share the newly created scheme with the participants
+3. Share the newly created scheme with the participants  
 `cat` the scheme.toml and share its contents via slack.
 
 4. Prompt dcipher operators to generate their long-term keys
@@ -54,7 +54,9 @@ peer_id = "12D3KooWGjQdQ6B3LazUw2EVbhakN3P5931e1UV76vJUNoV73Dd4"
 ```
 
 > [!NOTE]
-> `t` is the _malicious threshold_, i.e. the maximum number of malicious nodes the network can tolerate. **This is different to drand**. Under the current asynchronous DKG protocol, it can only be as high as $f$ where the total node count is $3f + 1$.
+> `t` is the _malicious threshold_, i.e. the maximum number of malicious nodes the network can tolerate. 
+> **This is different to drand**. 
+> Under the current asynchronous DKG protocol, it can only be as high as $f$ where the total node count is $3f + 1$.
 
 > [!NOTE]
 > `n` should be the same as the number of node entries.
@@ -62,6 +64,6 @@ peer_id = "12D3KooWGjQdQ6B3LazUw2EVbhakN3P5931e1UV76vJUNoV73Dd4"
 > [!WARNING]
 > If the nodes aren't running by the `start_time` of the ceremony, they may be excluded
 
-6. Share the `group.toml` file with the other dcipher network participants
+6. Share the `group.toml` file with the other dcipher network participants  
 Tell them their index for convenience, though they ought to check this themselves against their peerID
 
