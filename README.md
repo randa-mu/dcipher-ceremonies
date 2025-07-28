@@ -13,7 +13,7 @@ Ceremony Overview
 ## Phases
 The ADKG ceremony consists of three stages:
 
-- Scheme Definition: One participant (henceforth referred to as 'the leader') defines and shares a scheme file that outlines the group size, malicious threshold, curve parameters, and generators, and shares it with the other participants.
+- Scheme Definition: One participant (henceforth referred to as 'the leader') defines and shares a scheme file that outlines the curve parameters, and generators, and shares it with the other participants.
 - Operator Key Generation: Each participant generates two long-term keypairs (ADKG and libp2p) and submits their public material to the leader, whereby the leader will create a group file.
 - Distributed Key Generation: All nodes run the ADKG protocol simultaneously using synchronized start time, scheme definition and shared group file, producing a distributed public/private keypair suitable for threshold cryptographic operations.
 
