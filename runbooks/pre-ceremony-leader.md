@@ -29,7 +29,7 @@ Create a toml file like the following:
 ```toml
 n = 7
 t = 2
-start_time = "2025-07-24T16:25:30Zon "
+start_time = "2025-07-24T16:25:30Z"
 
 [[nodes]]
 id = 1
