@@ -8,7 +8,6 @@ The asynchronous distributed key generation (ADKG) ceremony is a decentralized c
 In the context of the dcipher network, this ceremony bootstraps a threshold cryptography network that allows nodes to later perform collective operations like decryption or signing, where a subset of nodes (e.g. 3-of-7) can act on behalf of the group.
 
 This is based on the paper [Practical Asynchronous Distributed Key Generation by Das et al](https://eprint.iacr.org/2021/1591.pdf)., and the adkg-cli tool from the dcipher repo implements this process.
-Ceremony Overview
 
 ## Phases
 The ADKG ceremony consists of three stages:
