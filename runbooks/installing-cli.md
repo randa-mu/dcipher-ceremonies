@@ -15,6 +15,7 @@ rustup install stable
 ```
 git clone https://github.com/randa-mu/dcipher
 cd dcipher
+git submodule update --init --recursive
 cargo build --release -p adkg-cli
 ```
 

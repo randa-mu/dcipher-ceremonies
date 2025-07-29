@@ -8,6 +8,7 @@
 rustup install stable && \
 cd /path/to/dcipher && \
 git pull && \
+git submodule update --init --recursive && \
 cargo build --release -p adkg-cli && \
 cp target/release/adkg-cli /usr/local/bin
 ```
