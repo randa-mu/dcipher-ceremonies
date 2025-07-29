@@ -1,7 +1,9 @@
 # dcipher testnet ceremony: {DATE_HERE]
 
-## Functionality under test
+## Version
+enter a tag, commit, or branch here
 
+## Functionality under test
 - 
 
 ## Participants
