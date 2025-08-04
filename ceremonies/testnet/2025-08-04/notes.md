@@ -31,6 +31,7 @@ generator_h = "gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE="
 ## Group 
 Once the network have generated their libp2p and bn254 keys, create a group file with the public key material and put it here
 
+
 ## Log
 Log any timings, actions, issues, or points to note here
 
