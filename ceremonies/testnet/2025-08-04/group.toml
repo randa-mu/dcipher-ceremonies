@@ -39,7 +39,7 @@ peer_id = "12D3KooWT3SmyBzmT2RY5pZhr5wHSZ5WkA8EwN8UvgUKZxhivcvw"
 # ATA network
 [[nodes]]
 id = 6
-multiaddr = "/dns/dciphertest.ata.network/tcp/443" 
+multiaddr = "/dns/dciphertest.ata.network/tcp/7777" 
 adkg_pk = "sBmCyhpfZ3NAj839elDbNmKYP/FC/k8Bjw7R7+2+vX0="
 peer_id = "12D3KooWBvRVuRLWRhyka1APsNg74gry6K9MSYPg4HmNPAjGcSte"
 
