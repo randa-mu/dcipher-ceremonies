@@ -1,0 +1,45 @@
+n = 6
+t = 1
+start_time = "2025-08-04T11:30:00Z"
+
+# DIA
+[[nodes]]
+id = 1
+multiaddr = "/dns/drand.diadata.org/tcp/4242"
+adkg_pk = "lr9B+pZVPbubORC5mo3OB5DVLhXSI3PCswMevfgngq0="
+peer_id = "12D3KooWNynkcrc6tS9EBQMe2J2BsebZq7bU4mgXMatDRer8eDbb"
+
+[[nodes]]
+id = 2
+multiaddr = "/dns/pl1-rpc.testnet.drand.sh/tcp/8080"
+adkg_pk = "lltIzBt8Uo/v3GK60dNs5PnfOPQFr1Qls02RoxJVppE="
+peer_id = "12D3KooWMTwoV3DPt1GUJfZdyDvmX4ankVswnPDK92sB9kePXukr"
+
+# QRL 
+[[nodes]]
+id = 3
+multiaddr = "/dns/testnet-1.drand.theqrl.org/tcp/4421"
+adkg_pk = "2tYGEfzWID8mlyjwj/dyQDeebydfMt7ZiRFKU1xzpDU="
+peer_id = "12D3KooWHZveoayqsNdUymq2ZGg4T3cqRvweEQgHBjHkNB1Mb5DH"
+
+# Randamu
+[[nodes]]
+id = 4
+multiaddr = "/ip4/193.5.234.66/tcp/7777"
+adkg_pk = "nbO+Xon/I68gWpm3bceQGWfhY0S6xfX+2wezrgDSpRU="
+peer_id = "12D3KooWDGEa22QJC5uoDuKiBDWrXht9PH5fmqbjse15uWywB5Dj"
+
+# Storswift
+[[nodes]]
+id = 5
+multiaddr = "/ip4/47.104.170.105/tcp/7890"
+adkg_pk = "7+uB38PiF3gCXDTv80fLzH7QJr4PZWhQcW1H29n+hH8="
+peer_id = "12D3KooWT3SmyBzmT2RY5pZhr5wHSZ5WkA8EwN8UvgUKZxhivcvw"
+
+# ATA network
+[[nodes]]
+id = 6
+multiaddr = "/dns/dciphertest.ata.network/tcp/443" 
+adkg_pk = "sBmCyhpfZ3NAj839elDbNmKYP/FC/k8Bjw7R7+2+vX0="
+peer_id = "12D3KooWBvRVuRLWRhyka1APsNg74gry6K9MSYPg4HmNPAjGcSte"
+

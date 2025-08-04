@@ -6,7 +6,7 @@
 - the leader has shared a `group.toml` containing all the public keys and multiaddrs of participating nodes with you
 
 ## Steps
-1. Extract your assigned ID from the `nodes.toml` file by finding the entry with your `peer_id`
+1. Extract your assigned ID from the `group.toml` file by finding the entry with your `peer_id`
 Ask the leader if you're not sure how to do this.
 It should be a non-zero integer, e.g. `1`
 
@@ -17,7 +17,7 @@ e.g. `export OPERATOR_ID=1`
 ```bash
 adkg-cli run \
   --scheme ./scheme.toml \                   # replace with the path to the scheme.toml file the leader gave you
-  --group ./group.toml \              # replace with the path to the nodes.toml the leader gave you
+  --group ./group.toml \                     # replace with the path to the group.toml the leader gave you
   --priv adkg.priv \                         # replace with the path to your private key file
   --id $OPERATOR_ID \                                   # replace with your assigned ID
   --listen-address "/ip4/0.0.0.0/tcp/7777" \ # replace with your chosen multiaddr
