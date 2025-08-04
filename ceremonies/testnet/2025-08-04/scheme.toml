@@ -1,0 +1,8 @@
+app_name = "dcipher-testnet"
+curve_id = "Bn254G1"
+hash_id = "Keccak256"
+adkg_version = "v0.1"
+adkg_scheme_name = "DYX20-Bn254G1-Keccak256"
+generator_g = "7YJERmicw+ViR4UEOBNRsutI+TAFzkJvUTw+HcON7zU="
+generator_h = "gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE="
+
