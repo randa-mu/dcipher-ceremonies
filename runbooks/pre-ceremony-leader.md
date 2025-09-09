@@ -36,6 +36,7 @@ Create a toml file like the following:
 ```toml
 n = 7
 t = 2
+t_reconstruction = 4
 start_time = "2025-07-24T16:25:30Z"
 
 [[nodes]]
@@ -65,6 +66,7 @@ peer_id = "12D3KooWGjQdQ6B3LazUw2EVbhakN3P5931e1UV76vJUNoV73Dd4"
 > **This is different to drand**. 
 >
 > Under the current asynchronous DKG protocol, it can only be as high as $f$ where the total node count is $3f + 1$.
+> `t_reconstruction` is the `t` you may be used to from drand-land
 
 > [!NOTE]
 > `n` should be the same as the number of node entries.
