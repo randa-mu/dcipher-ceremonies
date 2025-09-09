@@ -1,4 +1,4 @@
-# dcipher testnet ceremony: {DATE_HERE]
+# dcipher testnet ceremony: {DATE_HERE}
 
 ## Version
 enter a tag, commit, or branch here
