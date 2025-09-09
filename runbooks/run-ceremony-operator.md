@@ -22,7 +22,8 @@ adkg-cli run \
   --id $OPERATOR_ID \                                   # replace with your assigned ID
   --listen-address "/ip4/0.0.0.0/tcp/7777" \ # replace with your chosen multiaddr
   --priv-out keyshare.priv \                 # replace this with somewhere you can store your shared keys
-  --pub-out keyshare.pub                     # replace this with somewhere you can store your shared keys
+  --pub-out keyshare.pub \                   # replace this with somewhere you can store your shared keys
+  --transcript-out transcript.json           # replace this with somewhere you can store a transcript in case somebody fails to join
 
 ```
 

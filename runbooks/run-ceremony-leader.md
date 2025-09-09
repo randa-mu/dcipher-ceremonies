@@ -19,9 +19,9 @@ adkg-cli run \
   --id $ID \                                   # replace with your assigned ID
   --listen-address "/ip4/0.0.0.0/tcp/7777" \ # replace with your chosen multiaddr
   --timeout "48h" \                          
-  --priv-out keyshare.priv \                 # replace this with somewhere you can store your shared keys
-  --pub-out keyshare.pub                     # replace this with somewhere you can store your shared keys
-
+  --priv-out keyshare.priv \                 # replace this with somewhere you can store your private key
+  --pub-out keyshare.pub  \                  # replace this with somewhere you can store your shared keys
+  --transcript-out transcript.json           # replace this with somewhere you can store the DKG transcript
 ```
 
 > [!WARNING]  
