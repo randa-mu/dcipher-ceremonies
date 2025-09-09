@@ -73,6 +73,11 @@ peer_id = "12D3KooWDLZZZrLeQ5AgY9x3mmkpbThB8XVyyrhTXyJUDPeD9pUQ"
 Timings all in UTC:
 
 - 13:10 ceremony version finally released... a bit behind >.>
+- 14:07 Storswift reports timeouts for PartyIds 1 and 2 (Randamu nodes)
+- 14:09 Randamu seeing `AddrInUse` in logs - advises ATA to update firewall to include another IP
+```
+Failed to dial peer error=Transport([(/dns/dciphertest.ata.network/tcp/7777/p2p/12D3KooWP5191tQRaMGbKXVC5Aja1wPNdiZfRbAv5FKi5ZfszDfF, Other(Custom { kind: Other, error: Other(Transport(Left(Left(Os { code: 48, kind: AddrInUse, message: "Address already in use" })))) }))]) peer_id=12D3KooWP5191tQRaMGbKXVC5Aja1wPNdiZfRbAv5FKi5ZfszDfF short_id=PartyId(4)
+```
 - 14:10 ceremony runs, output looks promising:
 ```
 2025-09-09T14:10:24.726928Z  INFO adkg_cli::adkg_dxkr23: ADKG has terminated with an Ok output
@@ -136,3 +141,9 @@ peer_id = "12D3KooWDLZZZrLeQ5AgY9x3mmkpbThB8XVyyrhTXyJUDPeD9pUQ"
 multiaddr = "/ip4/47.104.170.105/tcp/7890"
 ```
 
+## Ceremony Result
+💥 Failure
+
+## Post-mortem
+Randamu nodes were running over Cloudflare tunnels, which caused libp2p to report `AddrInUse`, hence why Storswift could connect to 2 out of the 3 nodes. 
+Storswift were able to receive incoming packets from other nodes to build a final committee output.
