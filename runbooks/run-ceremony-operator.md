@@ -40,3 +40,11 @@ adkg-cli run \
 
 5. Monitor your CLI output and report any errors or suspicious log messages to the leader
 
+6. Wait until the ceremony ends and the grace period is compelte
+
+You should see log messages such as the following:
+```
+2025-09-09T14:10:24.726928Z  INFO adkg_cli::adkg_dxkr23: ADKG has terminated with an Ok output
+2025-09-09T14:10:24.726947Z  INFO adkg_cli::adkg_dxkr23: Running ADKG until grace period of 5m
+```
+This is a good sign, though your keyshares will be empty until the end of the grace period. This period allows other members of the committee to catch up.

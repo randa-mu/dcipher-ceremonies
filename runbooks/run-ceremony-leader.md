@@ -6,7 +6,7 @@
 - you've shared a `group.toml` containing all the public keys and multiaddrs of participating nodes with the other participants
 
 ## Steps
-1. Extract your assigned ID from the `nodes.toml` file by finding the entry with your `peer_id`
+1. Extract your assigned ID from the `group.toml` file by finding the entry with your `peer_id`
 It should be a non-zero integer, e.g. `1`.
 Export it for use in the next step: `export ID=1`
 
