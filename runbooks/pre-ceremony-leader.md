@@ -65,7 +65,7 @@ peer_id = "12D3KooWGjQdQ6B3LazUw2EVbhakN3P5931e1UV76vJUNoV73Dd4"
 >
 > **This is different to drand**. 
 >
-> Under the current asynchronous DKG protocol, it can only be as high as $f$ where the total node count is $3f + 1$.
+> Under the current asynchronous DKG protocol, it can only be as high as $f$ where the total node count is $3f + 1$.  
 > `t_reconstruction` is the `t` you may be used to from drand-land
 
 > [!NOTE]
