@@ -3,25 +3,28 @@ t = 2
 t_reconstruction = 3
 start_time = "2025-09-16T14:00:00Z"
 
+# Randamu
 [[nodes]]
 id = 1
 multiaddr = "/dns/dkg-testnet1.dcipher.network/tcp/8080"
 adkg_pk = "yQw9eEkBFnU+C6m56oxOzoFMUsLdmwW+cwxQW3Yw+FQ="
 peer_id = "12D3KooWCrQpXmCUgY3vFWhhVVnFAeDvYWr7zdYK8jE91Y9yBkuc"
 
+# Randamu
 [[nodes]]
 id = 2
 multiaddr = "/dns/dkg-testnet2.dcipher.network/tcp/8080"
 adkg_pk = "nsxiwSTOl40ngje5NjYYRcZ+89Hbd9wHRfGgZTQ6Nyk="
 peer_id = "12D3KooWNhSwgtWhSZQfqtNdFce2jsnXfpF4EB6YDpGoZJFm6aJJ"
 
+# ATA
 [[nodes]]
 id = 3
 multiaddr = "/dns/dciphertest.ata.network/tcp/7777"
 adkg_pk = "xISn+nUM+cWMXXolDSg9pNmkzWItyXS0X6qE7QvutSg="
 peer_id = "12D3KooWKouthHQeuYF4PgorkF1fEYsdYhEC9sLPapR2sHZ5Pomh"
 
-# IPFSFORCE
+# IPFSforce
 [[nodes]]
 id = 4
 multiaddr = "/ip4/47.97.251.33/tcp/7777"
