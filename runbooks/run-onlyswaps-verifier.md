@@ -17,7 +17,7 @@ mv ./target/release/onlyswaps-verifier ./onlyswaps-verifier
 
 **1b. From release: Download onlyswaps-verifier**
 ```
-wget https://github.com/randa-mu/dcipher/releases/latest/download/onlyswaps-verifier ./onlyswaps-verifier
+wget https://github.com/randa-mu/dcipher/releases/latest/download/onlyswaps-verifier -O ./onlyswaps-verifier
 ```
 
 **2. Attempt to execute the verifier**
