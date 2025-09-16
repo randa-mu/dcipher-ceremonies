@@ -1,7 +1,7 @@
 # dcipher testnet ceremony: 2025-09-16
 
 ## Version
-enter a tag, commit, or branch here
+v0.1.0-testnet.2
 
 ## Functionality under test
 - ADKG-CLI
