@@ -49,5 +49,5 @@ peer_id = "12D3KooWHeGyx3cUfkdbBCzUytTRUKuxdJ8j2V3Xf2Qcxghd8UkF"
 [[nodes]]
 id = 7
 multiaddr = "/dns/drand.diadata.org/tcp/4242"
-adkg_pk = "4H97WjJsuKRnNACoGbnIVrYs4kzfB2VmlmK4bhDDThg="
-peer_id = "12D3KooWCpsdsUvGkqajWcgU6v62R5edN8UG5QrDvfKMTZiwBBV6"
+adkg_pk = "oxNFSu+vFO8/u8ZuVIpcwI85vt7EYRvVLjB37Nkkbcs="
+peer_id = "12D3KooWT1acekTAQNuQT39N95dndESfDwWDHFMQLBQntBjQft9M"
