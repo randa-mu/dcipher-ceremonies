@@ -2,8 +2,8 @@
 
 ## Prerequisites
 - git, rust
-- you've run a successful ceremony
-- you've followed the [TODO onlyswaps-create-config](./todo.md) runbook and have created an onlyswaps-verifier config file.
+- you've run a successful ceremony and completed [the ceremony](./run-ceremony-operator.md) runbook
+- you've followed the [generate-onlyswaps-config](./generate-onlyswaps-config.md) runbook and have created an onlyswaps-verifier config file.
 
 ## Steps
 **1a. From source: Clone and Build the onlyswaps-verifier**
