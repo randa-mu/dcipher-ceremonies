@@ -9,20 +9,20 @@
 1. Identify the paths for all your key material, you will need the following files:
 - your operator private key, generated during [the key generation runbook](./operator-key-generation.md)
 - the group.toml file, shared to you by the leader [before the ceremony](./pre-ceremony-operator.md) 
-- your multiaddr, chosen by you [before the ceremony](./pre-ceremony-operator.md) 
+- the multiaddr your verifier will run on. It should be routable by the multiaddr you chose [before the ceremony](./pre-ceremony-operator.md), but likely will bind a more local interface behind a reverse proxy or similar (i.e. starts with `/ip4/0.0.0.0`)
 - your member ID, identified in the [first stages of the ceremony](./run-ceremony-operator.md)
-- the ADKG public output file, created [during the ceremony](./run-ceremony-operator.md)
-- the ADKG private output file, created [during the ceremony](./run-ceremony-operator.md)
+- the public keyshare file, created [during the ceremony](./run-ceremony-operator.md)
+- the private keyshare file, created [during the ceremony](./run-ceremony-operator.md)
 - (optional) the address of the router contract for ONLYswaps. There is a default one embedded in the configuration process, but if it's changed you may need a new one.
 
 2. Run the following command, replacing with the relevant paths from above:
 ```bash
 adkg-cli generate-onlyswaps-config \
-  --operator-private /path/to/private \
+  --private /path/to/longterm/private/key \       
   --group /path/to/group.toml \
-  --adkg-public /path/to/public \
-  --adkg-private /path/to/share \
-  --multiaddr "/dns/example.org/tcp/1234" \
+  --public-share /path/to/public/keyshare \
+  --private-share /path/to/private/keyshare \
+  --multiaddr "/ip4/0.0.0.0/tcp/1234" \
   --member-id $SOME_MEMBER_ID
 ```
 
