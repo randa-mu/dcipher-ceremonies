@@ -12,18 +12,18 @@ git clone https://github.com/randa-mu/dcipher
 cd dcipher
 git submodule update --init --recursive
 cargo build --release -p onlyswaps-verifier
-mv ./target/release/onlyswaps-verifier ./onlyswaps-verifier
 ```
 
 **1b. From release: Download onlyswaps-verifier**
 ```
-wget https://github.com/randa-mu/dcipher/releases/latest/download/onlyswaps-verifier -O ./onlyswaps-verifier
+mkdir -p ./target/release/
+wget https://github.com/randa-mu/dcipher/releases/latest/download/onlyswaps-verifier -O ./target/release/onlyswaps-verifier
 ```
 
 **2. Attempt to execute the verifier**
 1. Run the onlyswaps-verifier command, specifying the config file:
    ```bash
-   ./onlyswaps-verifier --config path/to/my/config.toml
+   ./target/release/onlyswaps-verifier --config path/to/my/config.toml
    ```
 2. Wait for a few seconds, making sure the verifier starts without errors.
    Stop the verifier with Ctrl-C.
@@ -36,7 +36,7 @@ Run the following commands to move the onlyswaps-verifier binary to `/opt/onlysw
 ```bash
 # move onlyswaps-verifier binary to /opt/onlyswaps/onlyswaps-verifier
 mkdir -p /opt/onlyswaps
-mv ./onlyswaps-verifier /opt/onlyswaps/
+mv ./target/release/onlyswaps-verifier /opt/onlyswaps/
 ```
 
 **2. Move config to /etc**
