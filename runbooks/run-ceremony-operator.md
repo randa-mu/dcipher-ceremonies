@@ -18,7 +18,7 @@ e.g. `export MEMBER_ID=1`
 adkg-cli run \
   --scheme ./scheme.toml \                   # replace with the path to the scheme.toml file the leader gave you
   --group ./group.toml \                     # replace with the path to the group.toml the leader gave you
-  --priv adkg.priv \                         # replace with the path to your private key file
+  --priv operator.priv \                     # replace with the path to your operator private key file
   --id $MEMBER_ID \                          # replace with your assigned ID
   --listen-address "/ip4/0.0.0.0/tcp/7777" \ # this multiaddr should represent the local binding (probably 0.0.0.0), not the internet one.
   --priv-out keyshare.priv \                 # replace this with somewhere you can store your shared keys

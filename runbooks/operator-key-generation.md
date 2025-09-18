@@ -22,20 +22,20 @@ e.g. `export ADKG_OUT=/home/myuser/adkg`
 > [!WARNING]
 > Don't write your distributed key share to a public drive or people can impersonate you!
 
-**3. Generate long-term keys in your chosen directories:**
+**3. Generate long-term operator keys in your chosen directories:**
 
 ```bash
 adkg-cli generate \
   --scheme $SCHEME_FILE \
-  --priv-out $ADKG_OUT/adkg.priv \
-  --pub-out $ADKG_OUT/adkg.pub
+  --priv-out $ADKG_OUT/longterm.priv \
+  --pub-out $ADKG_OUT/longterm.pub
 ```
 
 **4. Report any errors to the ceremony leader**
 
 **5. Sanity check the public key**
 
-Check the file at `$ADKG_OUT/adkg.pub` contains content similar to the following:  
+Check the file at `$ADKG_OUT/longterm.pub` contains content similar to the following:  
 ```
 adkg_pk = "4H97WjJsuKRnNACoGbnIVrYs4kzfB2VmlmK4bhDDThg="
 peer_id = "12D3KooWCpsdsUvGkqajWcgU6v62R5edN8UG5QrDvfKMTZiwBBV6"
@@ -44,7 +44,7 @@ If not, report it to the ceremony leader.
 
 **6. Sanity check the private key**
 
-Check the file at `$ADKG_OUT/adkg.priv` contains content similar to the following:  
+Check the file at `$ADKG_OUT/longterm.priv` contains content similar to the following:  
 ```
 adkg_sk = "Jq4uUbMcM6Ssqv9+zyqRHTpk479+uosoxkG6g+B2HJM="
 libp2p_sk = "CAESQLDgVgJ2B3dOnUvSNnmRZmP3FeBy5SuO7G2RPirFVrt9LLRhSL+o2KkQqYDpwqzDKPGnpR5jhpg+EUS4mmemaFU="

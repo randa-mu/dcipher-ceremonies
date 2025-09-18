@@ -15,7 +15,7 @@ Export it for use in the next step: `export ID=1`
 adkg-cli run \
   --scheme ./scheme.toml \                   # replace with the path to the scheme.toml file the leader gave you
   --group ./group.toml \              # replace with the path to the nodes.toml the leader gave you
-  --priv adkg.priv \                         # replace with the path to your private key file
+  --priv operator.priv \                         # replace with the path to your private key file
   --id $ID \                                   # replace with your assigned ID
   --listen-address "/ip4/0.0.0.0/tcp/7777" \ # replace with your chosen multiaddr
   --timeout "48h" \                          
