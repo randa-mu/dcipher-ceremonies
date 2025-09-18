@@ -1,29 +1,15 @@
 # Run onlyswaps-verifier
 
 ## Prerequisites
-- git, rust
 - you've run a successful ceremony and completed [the ceremony](./run-ceremony-operator.md) runbook
+- you've installed the [onlyswaps-verifier CLI](./installing-onlyswaps-verifier.md)
 - you've followed the [generate-onlyswaps-config](./generate-onlyswaps-config.md) runbook and have created an onlyswaps-verifier config file.
 
 ## Steps
-**1a. From source: Clone and Build the onlyswaps-verifier**
-```
-git clone https://github.com/randa-mu/dcipher
-cd dcipher
-git submodule update --init --recursive
-cargo build --release -p onlyswaps-verifier
-```
-
-**1b. From release: Download onlyswaps-verifier**
-```
-mkdir -p ./target/release/
-wget https://github.com/randa-mu/dcipher/releases/latest/download/onlyswaps-verifier -O ./target/release/onlyswaps-verifier
-```
-
-**2. Attempt to execute the verifier**
+**1. Attempt to execute the verifier**
 1. Run the onlyswaps-verifier command, specifying the config file:
    ```bash
-   ./target/release/onlyswaps-verifier --config path/to/my/config.toml
+   onlyswaps-verifier start --config path/to/my/config.toml
    ```
 2. Wait for a few seconds, making sure the verifier starts without errors.
    Stop the verifier with Ctrl-C.
@@ -76,7 +62,7 @@ Type=simple
 # TODO: Remove/update it if you didn't create a user
 User=onlyswaps
 Group=onlyswaps
-ExecStart=/opt/onlyswaps/onlyswaps-verifier --config /etc/onlyswaps/verifier.toml
+ExecStart=/opt/onlyswaps/onlyswaps-verifier start --config /etc/onlyswaps/verifier.toml
 Restart=always
 RestartSec=10
 StandardOutput=journal
@@ -125,7 +111,7 @@ With docker compose, you may either run the service as root, or with another use
          - "7777:7777"
        volumes:
          - path/to/my/config.toml:/etc/onlyswaps/verifier.toml:ro
-       command: ["--config", "/etc/onlyswaps/verifier.toml"]
+       command: ["start", "--config", "/etc/onlyswaps/verifier.toml"]
    ```
 2. Update the user id if different than the current user. If executing as root, use `user: "0:0"` (or comment the line).
 3. Update the libp2p port in the docker-compose file if different. If you use, say port `8888`, you should replace `7777:7777` with `8888:8888` instead.

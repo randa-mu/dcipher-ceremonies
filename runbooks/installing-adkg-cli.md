@@ -1,4 +1,4 @@
-# Installation the DKG CLI
+# Installation the ADKG CLI
 
 ## Prerequisites
 - git 
