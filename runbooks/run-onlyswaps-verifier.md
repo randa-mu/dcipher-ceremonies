@@ -111,7 +111,7 @@ With docker compose, you may either run the service as root, or with another use
          - "7777:7777"
        volumes:
          - path/to/my/config.toml:/etc/onlyswaps/verifier.toml:ro
-       command: ["start", "--config", "/etc/onlyswaps/verifier.toml"]
+       command: ["--config", "/etc/onlyswaps/verifier.toml"]
    ```
 2. Update the user id if different than the current user. If executing as root, use `user: "0:0"` (or comment the line).
 3. Update the libp2p port in the docker-compose file if different. If you use, say port `8888`, you should replace `7777:7777` with `8888:8888` instead.
