@@ -17,7 +17,7 @@
    Choose whichever works best, and follow the steps below.
 
 ## systemd
-**1. Move onlyswaps-verifier binary to /opt**  
+**1. (Optional) Move onlyswaps-verifier binary to /opt**  
 Run the following commands to move the onlyswaps-verifier binary to `/opt/onlyswaps/onlyswaps-verifier`.
 ```bash
 # move onlyswaps-verifier binary to /opt/onlyswaps/onlyswaps-verifier
@@ -62,6 +62,7 @@ Type=simple
 # TODO: Remove/update it if you didn't create a user
 User=onlyswaps
 Group=onlyswaps
+# TODO: Update path if not using /opt
 ExecStart=/opt/onlyswaps/onlyswaps-verifier start --config /etc/onlyswaps/verifier.toml
 Restart=always
 RestartSec=10
