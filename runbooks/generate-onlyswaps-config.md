@@ -3,7 +3,7 @@
 ## Prerequisites
 - you've successfully completed [the ceremony](./run-ceremony-operator.md) runbook
 - you have received a final keyshare.pub file from the ceremony containing your public key (amongst others)
-- you've installed the latest [ADKG-CLI](./installing-cli.md)
+- you've installed the latest [onlyswaps-verifier CLI](./installing-onlyswaps-verifier.md)
 
 ## Steps
 1. Identify the paths for all your key material, you will need the following files:
@@ -17,7 +17,7 @@
 
 2. Run the following command, replacing with the relevant paths from above:
 ```bash
-adkg-cli generate-onlyswaps-config \
+onlyswaps-verifier generate-config \
   --private /path/to/longterm/private/key \       
   --group /path/to/group.toml \
   --public-share /path/to/public/keyshare \

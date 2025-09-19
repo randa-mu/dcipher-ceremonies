@@ -1,29 +1,15 @@
 # Run onlyswaps-verifier
 
 ## Prerequisites
-- git, rust
 - you've run a successful ceremony and completed [the ceremony](./run-ceremony-operator.md) runbook
+- you've installed the [onlyswaps-verifier CLI](./installing-onlyswaps-verifier.md)
 - you've followed the [generate-onlyswaps-config](./generate-onlyswaps-config.md) runbook and have created an onlyswaps-verifier config file.
 
 ## Steps
-**1a. From source: Clone and Build the onlyswaps-verifier**
-```
-git clone https://github.com/randa-mu/dcipher
-cd dcipher
-git submodule update --init --recursive
-cargo build --release -p onlyswaps-verifier
-```
-
-**1b. From release: Download onlyswaps-verifier**
-```
-mkdir -p ./target/release/
-wget https://github.com/randa-mu/dcipher/releases/latest/download/onlyswaps-verifier -O ./target/release/onlyswaps-verifier
-```
-
-**2. Attempt to execute the verifier**
+**1. Attempt to execute the verifier**
 1. Run the onlyswaps-verifier command, specifying the config file:
    ```bash
-   ./target/release/onlyswaps-verifier --config path/to/my/config.toml
+   onlyswaps-verifier start --config path/to/my/config.toml
    ```
 2. Wait for a few seconds, making sure the verifier starts without errors.
    Stop the verifier with Ctrl-C.
@@ -31,7 +17,7 @@ wget https://github.com/randa-mu/dcipher/releases/latest/download/onlyswaps-veri
    Choose whichever works best, and follow the steps below.
 
 ## systemd
-**1. Move onlyswaps-verifier binary to /opt**  
+**1. (Optional) Move onlyswaps-verifier binary to /opt**  
 Run the following commands to move the onlyswaps-verifier binary to `/opt/onlyswaps/onlyswaps-verifier`.
 ```bash
 # move onlyswaps-verifier binary to /opt/onlyswaps/onlyswaps-verifier
@@ -76,7 +62,8 @@ Type=simple
 # TODO: Remove/update it if you didn't create a user
 User=onlyswaps
 Group=onlyswaps
-ExecStart=/opt/onlyswaps/onlyswaps-verifier --config /etc/onlyswaps/verifier.toml
+# TODO: Update path if not using /opt
+ExecStart=/opt/onlyswaps/onlyswaps-verifier start --config /etc/onlyswaps/verifier.toml
 Restart=always
 RestartSec=10
 StandardOutput=journal

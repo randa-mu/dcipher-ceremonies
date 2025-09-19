@@ -8,7 +8,7 @@
 
 **1. Update to the latest DKG CLI**
 
-Pull the latest commit on the `main` branch from the [dcipher repo](https://github.com/randa-mu/dcipher) and follow the steps in the [installation guide](./installing-cli.md).
+Pull the latest commit on the `main` branch from the [dcipher repo](https://github.com/randa-mu/dcipher) and follow the steps in the [installation guide](./installing-adkg-cli.md).
 
 **2. Generate your keys**
 
