@@ -20,8 +20,8 @@
 onlyswaps-verifier generate-config \
   --private /path/to/longterm/private/key \       
   --group /path/to/group.toml \
-  --public-share /path/to/public/keyshare \
-  --private-share /path/to/private/keyshare \
+  --adkg-public /path/to/public/keyshare \
+  --adkg-private /path/to/private/keyshare \
   --multiaddr "/ip4/0.0.0.0/tcp/1234" \
   --member-id $SOME_MEMBER_ID
 ```
