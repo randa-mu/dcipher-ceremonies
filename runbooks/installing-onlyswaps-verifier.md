@@ -4,8 +4,10 @@
 - git 
 - rustup
 - protoc > 3.15: through package manager or [binaries](https://protobuf.dev/installation/)
+
   > [!WARNING]
   > Ubuntu releases prior to 24.04 (noble) have an older version of protoc and require a manual installation.
+
 - build dependencies, for Debian/Ubuntu: build-essential libssl-dev pkg-config
 
 ## Steps
