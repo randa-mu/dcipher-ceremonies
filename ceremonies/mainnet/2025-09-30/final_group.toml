@@ -1,0 +1,88 @@
+adkg_scheme_name = "DXKR23-Bn254G1-Keccak256"
+genesis_timestamp = 1759233600
+group_pk = "486nH+6k3O56JiJs684/W/p8ryAipRluAplIG1ARaRkc5bjdvnnsLUni9VimypUsKm5gfW6aXSQGywYQ3Tu2zQ=="
+group_pk_source = "sA8eoYKY9L/FTsyURV+QX39konXC0G3Qk+AhccBAIhg="
+
+[[node_pks]]
+id = 1
+pk = "75+1et/NETM2Tryril0NoDCmnlCbxsyblgATxNL5rvgTTpHTB8fgsRoFbxqna09t5WOug3SHfLjiHexu+LTxmg=="
+peer_id = "12D3KooWJvYaMqERGdUagqka5YwCpN7FA9enHbonXNhdnifCLRXm"
+multiaddr = "/dns/mainnet1.dkg.dcipher.network/tcp/8080"
+
+[[node_pks]]
+id = 2
+pk = "4bAI3QeI8H3SY/KUvpTawdB0Fx7ZDEKAh18Kh2eyIPobbra+Xeu/m5IAnQzposVh9EY2O3J34DoqtzB4jPHvKA=="
+peer_id = "12D3KooWBzwNW9WKAGyn1nBkEoMQA86go3xCYVf9Sn8rxfQTC7HD"
+multiaddr = "/dns/mainnet2.dkg.dcipher.network/tcp/8080"
+
+[[node_pks]]
+id = 3
+pk = "ws5CYEQVPtqUyyKYGdD7h0fkLdawvHp6CLJw73i4roUuv+44r7jvsnZL1jfOzUUQ6sLeqUky2DKG0xa+MYuApA=="
+peer_id = "12D3KooWFjbRVYTGRDLMFCXJukiTjGY2h8yA53SNg7EoPDdXzg9r"
+multiaddr = "/dns/dcipher.ata.network/tcp/7778"
+
+[[node_pks]]
+id = 4
+pk = "yCJ7La23bd9EFI3AnQxOUnwrxRA2J/V62O5rXOtuUbwm25zra2s/bXudBEDbsYvPWydfnIV1rEikU1sThoFTRA=="
+peer_id = "12D3KooWJX9TK3zWadqv2DeG1fsUbrmfxVLJqzGfPr23QGetvDrx"
+multiaddr = "/dns/dci-mainnet.ipfsforce.com/tcp/7777"
+
+[[node_pks]]
+id = 5
+pk = "x4iHburfuE36VHKiQ1GUXx5vhVTr+IzwsZ3daATlQQsETuWGrXwG/oJFiErPHcpQc6B7FfZYIefY/RuJ1JQsKw=="
+peer_id = "12D3KooWSBJZ3Z3Qr5GsdNTRC3ePbNdApURWK35N4iAXzjv6rKh9"
+multiaddr = "/dns/labs.secureweb3.com/tcp/8890"
+
+[[node_pks]]
+id = 6
+pk = "gDg5fwhqqTgUGDKO4sGb8sO//sfvEHugZhrTnYcjKKYNbs+6QsLs6RS6znRiM+x6TSfHNYWpzPf0Cdgo5mP1JQ=="
+peer_id = "12D3KooWDkCVCePZYXrHYhjVM9d7CLKSMHvUgpon8EPZKp341nDU"
+multiaddr = "/dns/misc.quimian.com/tcp/5050"
+
+[[node_pks]]
+id = 7
+pk = "wT7qxgp3aLvbgO1pURPAxYSVGnvExas5P+XPvyiEjn0cGfGstjYTJkLSUYfK4VHaAway4RVQePjMQTbctLwJGA=="
+peer_id = "12D3KooWB8nSysj9DNLgeWdS3aTbb2htiPHn99LA5jUuDrreMadH"
+multiaddr = "/dns/drand.diadata.org/tcp/4243"
+
+[[node_pks_source]]
+id = 1
+pk = "qHB1B6N/dVGyZDt/oQmcnGU3D4ZXiHO8hD/vf30MUDY="
+peer_id = "12D3KooWJvYaMqERGdUagqka5YwCpN7FA9enHbonXNhdnifCLRXm"
+multiaddr = "/dns/mainnet1.dkg.dcipher.network/tcp/8080"
+
+[[node_pks_source]]
+id = 2
+pk = "12mUm1C3DXN3G8jaP9B79FrKhF6JHLg95MftBAIh6ds="
+peer_id = "12D3KooWBzwNW9WKAGyn1nBkEoMQA86go3xCYVf9Sn8rxfQTC7HD"
+multiaddr = "/dns/mainnet2.dkg.dcipher.network/tcp/8080"
+
+[[node_pks_source]]
+id = 3
+pk = "yZOTx4QV4dUM/cupjRDRN8SgIud+yKeeDBMycM6jCEg="
+peer_id = "12D3KooWFjbRVYTGRDLMFCXJukiTjGY2h8yA53SNg7EoPDdXzg9r"
+multiaddr = "/dns/dcipher.ata.network/tcp/7778"
+
+[[node_pks_source]]
+id = 4
+pk = "ybN5qjfIv77Ss4la48Xy7T+EvbB348gCk4JtogYWNUE="
+peer_id = "12D3KooWJX9TK3zWadqv2DeG1fsUbrmfxVLJqzGfPr23QGetvDrx"
+multiaddr = "/dns/dci-mainnet.ipfsforce.com/tcp/7777"
+
+[[node_pks_source]]
+id = 5
+pk = "j6TLR67ey4PDYSRAJUVnFj3FVTt5MWoWwOh2YHn8/Hk="
+peer_id = "12D3KooWSBJZ3Z3Qr5GsdNTRC3ePbNdApURWK35N4iAXzjv6rKh9"
+multiaddr = "/dns/labs.secureweb3.com/tcp/8890"
+
+[[node_pks_source]]
+id = 6
+pk = "kurZ9W6fO62U5vyhrCthSwYSGSeA99tNEJryOCix0TY="
+peer_id = "12D3KooWDkCVCePZYXrHYhjVM9d7CLKSMHvUgpon8EPZKp341nDU"
+multiaddr = "/dns/misc.quimian.com/tcp/5050"
+
+[[node_pks_source]]
+id = 7
+pk = "7fTEvA/c/UtybDeSM2Kqel1p2qLCO01NamgIJh8eF+A="
+peer_id = "12D3KooWB8nSysj9DNLgeWdS3aTbb2htiPHn99LA5jUuDrreMadH"
+multiaddr = "/dns/drand.diadata.org/tcp/4243"

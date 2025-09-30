@@ -91,5 +91,9 @@ peer_id = "12D3KooWB8nSysj9DNLgeWdS3aTbb2htiPHn99LA5jUuDrreMadH"
 ## Log
 Log any timings, actions, issues, or points to note here
 - 0815: group file compiled :partyparrot:
+- 0824: operators instruct to start the ceremony at their leisure
+- 0846: Randamu logs show ATA and EO online (aligning with their slack emojis)
+- 0902: DIA join the fray
+- 1200: ceremony goes off without a hitch and everybody gets a keyshare!!
 
 
