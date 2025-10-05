@@ -15,7 +15,7 @@ In the first section, fill in the various paths from the outputs of [keygen](./o
 Choose one of the configs below for adaptation, depending on the ceremony type:
 
 <details>
-<summary><strong>Mainnet</strong</summary>  
+<summary><strong>Mainnet</strong></summary>  
 
 ```toml
 # you generated this before running the ADKG
