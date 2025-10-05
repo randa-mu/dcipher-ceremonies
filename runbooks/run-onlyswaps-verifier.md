@@ -18,6 +18,12 @@ Choose one of the configs below for adaptation, depending on the ceremony type:
 <summary><strong>Mainnet</strong></summary>  
 
 ```toml
+# your ID in the adkg_public file
+member_id = 1
+
+# this is the address you bind locally, not necessarily the multiaddr others connect to you with
+listen_addr = "/ip4/0.0.0.0/tcp/9898"
+
 # you generated this before running the ADKG
 longterm_secret_path = "/path/to/longterm/secret/key/longterm.priv"
 
@@ -32,12 +38,6 @@ adkg_secret_path = "/path/to/priv/adkg/keyshare.priv"
 
 # just use the 0 private key for now, unless you want to race Randamu nodes for fulfillment ;)
 eth_private_key = "0x00000000000000000000000000000000000000000000000000000000000000"
-
-# your ID in the adkg_public file
-member_id = 1
-
-# this is the address you bind locally, not necessarily the multiaddr others connect to you with
-listen_addr = "/ip4/0.0.0.0/tcp/9898"
 
 # `agent` is used for general configuration and monitoring params
 [agent]
@@ -51,14 +51,14 @@ log_json = true                             # whether the logs should be structu
 # You may configure an RPC of your choice, but only websockets and websockets secure are supported
 [[networks]]
 chain_id = 43114
-rpc_url = "wss://avalanche-c-chain-rpc.publicnode.com"      # presently only websockets and websockets secure are supported
-router_address = "0x3dD1a497846d060Dce130B67b22E1F9DeE18c051"
-should_write = false                                         # controls whether this node writes signatures back to chain; you probably want false
+rpc_url = "wss://avalanche-c-chain-rpc.publicnode.com"
+router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
+should_write = false          # controls whether this node writes signatures back to chain; you probably want false
 
 [[networks]]
 chain_id = 8453
 rpc_url = "wss://base-rpc.publicnode.com"
-router_address = "0x3dD1a497846d060Dce130B67b22E1F9DeE18c051"
+router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
 should_write = false
 ```
 </details>
@@ -67,6 +67,12 @@ should_write = false
 <summary><strong>Testnet</strong></summary>  
 
 ```toml
+# your ID in the adkg_public file
+member_id = 1
+
+# this is the address you bind locally, not necessarily the multiaddr others connect to you with
+listen_addr = "/ip4/0.0.0.0/tcp/9898"
+
 # you generated this before running the ADKG
 longterm_secret_path = "/path/to/longterm/secret/key/longterm.priv"
 
@@ -81,12 +87,6 @@ adkg_secret_path = "/path/to/priv/adkg/keyshare.priv"
 
 # just use the 0 private key for now, unless you want to race Randamu nodes for fulfillment ;)
 eth_private_key = "0x00000000000000000000000000000000000000000000000000000000000000"
-
-# your ID in the adkg_public file
-member_id = 1
-
-# this is the address you bind locally, not necessarily the multiaddr others connect to you with
-listen_addr = "/ip4/0.0.0.0/tcp/9898"
 
 # `agent` is used for general configuration and monitoring params
 [agent]
@@ -101,13 +101,13 @@ log_json = true                             # whether the logs should be structu
 [[networks]]
 chain_id = 43114
 rpc_url = "wss://avalanche-fuji-c-chain-rpc.publicnode.com"      
-router_address = "0x3dD1a497846d060Dce130B67b22E1F9DeE18c051"
-should_write = false                                         # you probably want this to be false unles you want to pay gas fees racing the randamu nodes ;)
+router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
+should_write = false               # you probably want this to be false unles you want to pay gas fees racing the randamu nodes ;)
 
 [[networks]]
 chain_id = 84532
 rpc_url = "wss://base-sepolia-rpc.publicnode.com"
-router_address = "0x3dD1a497846d060Dce130B67b22E1F9DeE18c051"
+router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
 should_write = false
 ```
 
