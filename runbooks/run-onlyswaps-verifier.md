@@ -14,7 +14,8 @@ In the first section, fill in the various paths from the outputs of [keygen](./o
 
 Choose one of the configs below for adaptation, depending on the ceremony type:
 
-<details><summary>Mainnet</summary>
+<details>
+<summary>Mainnet</summary>  
 
 ```toml
 # you generated this before running the ADKG
@@ -62,7 +63,9 @@ should_write = false
 ```
 </details>
 
-<details><summary>Testnet</summary>
+<details>
+<summary>Testnet</summary>  
+
 ```toml
 # you generated this before running the ADKG
 longterm_secret_path = "/path/to/longterm/secret/key/longterm.priv"
@@ -107,6 +110,7 @@ rpc_url = "wss://base-sepolia-rpc.publicnode.com"
 router_address = "0x3dD1a497846d060Dce130B67b22E1F9DeE18c051"
 should_write = false
 </details>
+```
 
 ### **1. Attempt to execute the verifier**
 1. Run the onlyswaps-verifier command, specifying the config file:
