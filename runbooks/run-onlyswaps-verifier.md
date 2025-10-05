@@ -15,7 +15,7 @@ In the first section, fill in the various paths from the outputs of [keygen](./o
 Choose one of the configs below for adaptation, depending on the ceremony type:
 
 <details>
-<summary>Mainnet</summary>  
+<summary><strong>Mainnet</strong</summary>  
 
 ```toml
 # you generated this before running the ADKG
@@ -64,7 +64,7 @@ should_write = false
 </details>
 
 <details>
-<summary>Testnet</summary>  
+<summary><strong>Testnet</strong></summary>  
 
 ```toml
 # you generated this before running the ADKG
