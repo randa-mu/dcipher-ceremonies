@@ -109,10 +109,11 @@ chain_id = 84532
 rpc_url = "wss://base-sepolia-rpc.publicnode.com"
 router_address = "0x3dD1a497846d060Dce130B67b22E1F9DeE18c051"
 should_write = false
-</details>
 ```
 
-### **1. Attempt to execute the verifier**
+</details>
+
+### **2. Attempt to execute the verifier**
 1. Run the onlyswaps-verifier command, specifying the config file:
    ```bash
    onlyswaps-verifier start --config path/to/my/config.toml
@@ -126,7 +127,7 @@ should_write = false
 
 ## systemd
 
-### **2. (Optional) Move onlyswaps-verifier binary to /opt**  
+### **3. (Optional) Move onlyswaps-verifier binary to /opt**  
 Run the following commands to move the onlyswaps-verifier binary to `/opt/onlyswaps/onlyswaps-verifier`.
 ```bash
 # move onlyswaps-verifier binary to /opt/onlyswaps/onlyswaps-verifier
@@ -134,7 +135,7 @@ mkdir -p /opt/onlyswaps
 mv ./target/release/onlyswaps-verifier /opt/onlyswaps/
 ```
 
-### **3. Move config to /etc**
+### **4. Move config to /etc**
 Run the following commands to move the onlyswaps-verifier configuration file to `/etc/onlyswaps/verifier.toml`.
 ```bash
 # move config to /etc/onlyswaps/verifier.toml
@@ -145,7 +146,7 @@ mv path/to/my/config.toml /etc/onlyswaps/verifier.toml
 chmod 640 /etc/onlyswaps/verifier.toml
 ```
 
-### **4. (Optional) Create a new user**  
+### **5. (Optional) Create a new user**  
 Depending on your setup, you may want/need to create a separate user to run the onlyswaps-verifier service.
 This can be done with the following commands:
 ```bash
@@ -158,7 +159,7 @@ chmod +x /opt/onlyswaps/onlyswaps-verifier
 chown root:onlyswaps /etc/onlyswaps/verifier.toml
 ```
 
-### **4. Create unit file**  
+### **6. Create unit file**  
 Create a new unit file under `/etc/systemd/system/onlyswaps-verifier.service`, with the following content:
 ```ini
 [Unit]
@@ -187,7 +188,7 @@ ProtectHome=yes
 WantedBy=multi-user.target
 ```
 
-### **6. Run the service**  
+### **7. Run the service**  
 Enable and start the service with the following commands:
 ```bash
 # Reload systemd to recognize the new service
