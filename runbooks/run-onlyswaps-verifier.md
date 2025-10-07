@@ -46,6 +46,12 @@ healthcheck_port = 9999                     # make sure not to bind the same as 
 log_level = "debug"                         # debug, info, trace, error
 log_json = true                             # whether the logs should be structured as JSON or plaintext
 
+# these are some timeout and finalisation related params - don't change them for now
+[timeout]
+block_safety = "BLOCK_SAFETY_LATEST" 
+request_timeout = "30s"
+retry_duration = "30s"
+
 # `networks` details all the configuration relating to connecting to blockchains. Each can be configured independently.
 # Presently all networks must be supported, and skipping verifications for one route (chain -> chain) may cause errors.
 # You may configure an RPC of your choice, but only websockets and websockets secure are supported
@@ -94,6 +100,12 @@ healthcheck_listen_addr = "0.0.0.0"
 healthcheck_port = 9999                     # make sure not to bind the same as the listen_addr!
 log_level = "debug"                         # debug, info, trace, error
 log_json = true                             # whether the logs should be structured as JSON or plaintext
+
+# these are some timeout and finalisation related params - don't change them for now
+[timeout]
+block_safety = "BLOCK_SAFETY_LATEST" 
+request_timeout = "30s"
+retry_duration = "30s"
 
 # `networks` details all the configuration relating to connecting to blockchains. Each can be configured independently.
 # Presently all networks must be supported, and skipping verifications for one route (chain -> chain) may cause errors.
