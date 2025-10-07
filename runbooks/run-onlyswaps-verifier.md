@@ -135,15 +135,15 @@ mkdir -p /opt/onlyswaps
 mv ./target/release/onlyswaps-verifier /opt/onlyswaps/
 ```
 
-### **4. Move config to /etc**
-Run the following commands to move the onlyswaps-verifier configuration file to `/etc/onlyswaps/verifier.toml`.
+### **4. Move config to /opt**
+Run the following commands to move the onlyswaps-verifier configuration file to `/opt/onlyswaps/verifier.toml`.
 ```bash
-# move config to /etc/onlyswaps/verifier.toml
-mkdir -p /etc/onlyswaps
-mv path/to/my/config.toml /etc/onlyswaps/verifier.toml
+# move config to /opt/onlyswaps/verifier.toml
+mkdir -p /opt/onlyswaps/etc
+mv path/to/my/config.toml /opt/onlyswaps/etc/verifier.toml
 
 # adjust verifier.toml permissions
-chmod 640 /etc/onlyswaps/verifier.toml
+chmod 640 /opt/onlyswaps/etc/verifier.toml
 ```
 
 ### **5. (Optional) Create a new user**  
@@ -156,7 +156,7 @@ useradd --system --shell /bin/false --no-create-home onlyswaps
 # adjust permissions
 chown onlyswaps:onlyswaps /opt/onlyswaps/onlyswaps-verifier
 chmod +x /opt/onlyswaps/onlyswaps-verifier
-chown root:onlyswaps /etc/onlyswaps/verifier.toml
+chown root:onlyswaps /opt/onlyswaps/etc/verifier.toml
 ```
 
 ### **6. Create unit file**  
@@ -173,7 +173,7 @@ Type=simple
 User=onlyswaps
 Group=onlyswaps
 # TODO: Update path if not using /opt
-ExecStart=/opt/onlyswaps/onlyswaps-verifier start --config /etc/onlyswaps/verifier.toml
+ExecStart=/opt/onlyswaps/onlyswaps-verifier start --config /opt/onlyswaps/etc/verifier.toml
 Restart=always
 RestartSec=10
 StandardOutput=journal
@@ -223,8 +223,8 @@ With docker compose, you may either run the service as root, or with another use
          # TODO: update libp2p port below if using a different one
          - "7777:7777"
        volumes:
-         - path/to/my/config.toml:/etc/onlyswaps/verifier.toml:ro
-       command: ["--config", "/etc/onlyswaps/verifier.toml"]
+         - path/to/my/config.toml:/opt/onlyswaps/etc/verifier.toml:ro
+       command: ["--config", "/opt/onlyswaps/etc/verifier.toml"]
    ```
 2. Update the user id if different than the current user. If executing as root, use `user: "0:0"` (or comment the line).
 3. Update the libp2p port in the docker-compose file if different. If you use, say port `8888`, you should replace `7777:7777` with `8888:8888` instead.
