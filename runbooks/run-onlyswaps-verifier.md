@@ -36,8 +36,8 @@ adkg_public_path = "/path/to/pub/adkg/keyshare.pub"
 # this was created during the ADKG
 adkg_secret_path = "/path/to/priv/adkg/keyshare.priv"
 
-# just use the 0 private key for now, unless you want to race Randamu nodes for fulfillment ;)
-eth_private_key = "0x0000000000000000000000000000000000000000"
+# just a nonsense private key for now, unless you want to race Randamu nodes for fulfillment ;)
+eth_private_key = "0xf000000000000000000000000000000000000000"
 
 # `agent` is used for general configuration and monitoring params
 [agent]
@@ -92,7 +92,7 @@ adkg_public_path = "/path/to/pub/adkg/keyshare.pub"
 adkg_secret_path = "/path/to/priv/adkg/keyshare.priv"
 
 # just use the 0 private key for now, unless you want to race Randamu nodes for fulfillment ;)
-eth_private_key = "0x0000000000000000000000000000000000000000"
+eth_private_key = "0xf000000000000000000000000000000000000000"
 
 # `agent` is used for general configuration and monitoring params
 [agent]
@@ -113,13 +113,13 @@ retry_duration = "30s"
 [[networks]]
 chain_id = 43114
 rpc_url = "wss://avalanche-fuji-c-chain-rpc.publicnode.com"      
-router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
+router_address = "0x83b2dFc83E41a2398e28e31C352E1053805e4C16"
 should_write = false               # you probably want this to be false unles you want to pay gas fees racing the randamu nodes ;)
 
 [[networks]]
 chain_id = 84532
 rpc_url = "wss://base-sepolia-rpc.publicnode.com"
-router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
+router_address = "0x83b2dFc83E41a2398e28e31C352E1053805e4C16"
 should_write = false
 ```
 
