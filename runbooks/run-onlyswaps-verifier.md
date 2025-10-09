@@ -37,7 +37,7 @@ adkg_public_path = "/path/to/pub/adkg/keyshare.pub"
 adkg_secret_path = "/path/to/priv/adkg/keyshare.priv"
 
 # just a nonsense private key for now, unless you want to race Randamu nodes for fulfillment ;)
-eth_private_key = "0xf000000000000000000000000000000000000000"
+eth_private_key = "0xf000000000000000000000000000000000000000000000000000000000000000"
 
 # `agent` is used for general configuration and monitoring params
 [agent]
@@ -92,7 +92,7 @@ adkg_public_path = "/path/to/pub/adkg/keyshare.pub"
 adkg_secret_path = "/path/to/priv/adkg/keyshare.priv"
 
 # just use the 0 private key for now, unless you want to race Randamu nodes for fulfillment ;)
-eth_private_key = "0xf000000000000000000000000000000000000000"
+eth_private_key = "0xf000000000000000000000000000000000000000000000000000000000000000"
 
 # `agent` is used for general configuration and monitoring params
 [agent]
