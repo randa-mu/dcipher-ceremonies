@@ -111,15 +111,15 @@ retry_duration = "30s"
 # Presently all networks must be supported, and skipping verifications for one route (chain -> chain) may cause errors.
 # You may configure an RPC of your choice, but only websockets and websockets secure are supported
 [[networks]]
-chain_id = 43114
+chain_id = 43113
 rpc_url = "wss://avalanche-fuji-c-chain-rpc.publicnode.com"      
-router_address = "0x83b2dFc83E41a2398e28e31C352E1053805e4C16"
+router_address = "0xC69DD549B037215BA1Ea9866FFa59603862bf986"
 should_write = false               # you probably want this to be false unles you want to pay gas fees racing the randamu nodes ;)
 
 [[networks]]
 chain_id = 84532
 rpc_url = "wss://base-sepolia-rpc.publicnode.com"
-router_address = "0x83b2dFc83E41a2398e28e31C352E1053805e4C16"
+router_address = "0xC69DD549B037215BA1Ea9866FFa59603862bf986"
 should_write = false
 ```
 
