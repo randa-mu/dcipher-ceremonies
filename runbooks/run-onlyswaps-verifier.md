@@ -58,13 +58,13 @@ retry_duration = "30s"
 [[networks]]
 chain_id = 43114
 rpc_url = "wss://avalanche-c-chain-rpc.publicnode.com"
-router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
+router_address = "0x16323707e61d20a39aae5ab64808e480b91658ab"
 should_write = false          # controls whether this node writes signatures back to chain; you probably want false
 
 [[networks]]
 chain_id = 8453
 rpc_url = "wss://base-rpc.publicnode.com"
-router_address = "0x4cB630aAEA9e152db83A846f4509d83053F21078"
+router_address = "0x16323707e61d20a39aae5ab64808e480b91658ab"
 should_write = false
 ```
 </details>
@@ -113,13 +113,13 @@ retry_duration = "30s"
 [[networks]]
 chain_id = 43113
 rpc_url = "wss://avalanche-fuji-c-chain-rpc.publicnode.com"      
-router_address = "0xC69DD549B037215BA1Ea9866FFa59603862bf986"
+router_address = "0x16323707e61d20a39aae5ab64808e480b91658ab"
 should_write = false               # you probably want this to be false unles you want to pay gas fees racing the randamu nodes ;)
 
 [[networks]]
 chain_id = 84532
 rpc_url = "wss://base-sepolia-rpc.publicnode.com"
-router_address = "0xC69DD549B037215BA1Ea9866FFa59603862bf986"
+router_address = "0x16323707e61d20a39aae5ab64808e480b91658ab"
 should_write = false
 ```
 
